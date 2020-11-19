@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="wallpaper" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.SettingController">
+   <children>
+      <AnchorPane fx:id="teamPane" layoutX="-7.0" layoutY="60.0" prefHeight="391.0" prefWidth="967.0">
+         <children>
+            <ImageView fx:id="imageTeam" fitHeight="250.0" fitWidth="400.0" layoutX="484.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+            <MenuButton fx:id="menuTheme" alignment="CENTER" layoutX="158.0" layoutY="165.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Theme">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetTeam" text="1" />
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetTeam" text="2" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleBtnSetTeam" text="3" />
+              </items>
+            </MenuButton>
+            <Button layoutX="158.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleBtnUseTeam" prefHeight="31.0" prefWidth="200.0" text="Use Team" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="moviePane" layoutY="77.0" prefHeight="364.0" prefWidth="960.0" visible="false">
+         <children>
+            <TableView fx:id="tableMovie" layoutX="6.0" layoutY="30.0" prefHeight="132.0" prefWidth="949.0">
+              <columns>
+                <TableColumn fx:id="movName" prefWidth="70.0" text="Name" />
+                <TableColumn fx:id="movType" prefWidth="91.0" text="Type" />
+                  <TableColumn fx:id="movDes" prefWidth="239.0" text="Description" />
+                  <TableColumn fx:id="movMin" prefWidth="81.0" text="Minute" />
+                  <TableColumn fx:id="movRou" prefWidth="169.0" text="Round" />
+                  <TableColumn fx:id="movPos" prefWidth="133.0" text="Poster" />
+                  <TableColumn fx:id="movTra" prefWidth="164.0" text="Trailer" />
+              </columns>
+            </TableView>
+            <MenuButton fx:id="menuNumMovSet" alignment="CENTER" layoutX="18.0" layoutY="176.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="95.0" text="Number">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetNum1" text="1" />
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetNum1" text="2" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleBtnSetNum1" text="3" />
+              </items>
+            </MenuButton>
+            <TextField fx:id="textMin" alignment="TOP_LEFT" layoutX="18.0" layoutY="220.0" prefHeight="31.0" prefWidth="95.0" promptText="Minute" />
+            <TextField fx:id="textPos" disable="true" layoutX="17.0" layoutY="262.0" prefHeight="31.0" prefWidth="208.0" promptText="FilePoster" />
+            <TextField fx:id="textTra" disable="true" layoutX="17.0" layoutY="303.0" prefHeight="31.0" prefWidth="208.0" promptText="FileTrailer" />
+            <Button fx:id="btnEdit" layoutX="271.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleBtnEdit" prefHeight="31.0" prefWidth="333.0" text="Edit Movie" />
+            <MenuButton fx:id="menuNumRouAdd" alignment="CENTER" layoutX="619.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Number">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleBtnSetNum2" text="1" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleBtnSetNum2" text="2" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleBtnSetNum2" text="3" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="menuSys" alignment="CENTER" layoutX="731.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="System">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetItem" text="Normal" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleBtnSetItem" text="3D" />
+                  <MenuItem fx:id="item4D" mnemonicParsing="false" onAction="#handleBtnSetItem" text="4D" />
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetItem" text="VIP" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="menuTime" alignment="CENTER" layoutX="843.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Time">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetTime" text="10:30" />
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetTime" text="14:40" />
+                  <MenuItem fx:id="item19" mnemonicParsing="false" onAction="#handleBtnSetTime" text="19:30" />
+              </items>
+            </MenuButton>
+            <Button layoutX="619.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleBtnAddRound" prefHeight="31.0" prefWidth="319.0" text="Add Round" />
+            <Button fx:id="btnPos" layoutX="229.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleBtnFilePos" prefHeight="31.0" prefWidth="32.0" text="..." />
+            <Button fx:id="btnTra" layoutX="229.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleBtnFilePTra" prefHeight="31.0" prefWidth="32.0" text="..." />
+            <TextArea fx:id="textDes" layoutX="271.0" layoutY="176.0" prefHeight="117.0" prefWidth="333.0" promptText="Description" />
+            <TextField fx:id="textName" layoutX="122.0" layoutY="176.0" prefHeight="31.0" prefWidth="140.0" promptText="Name" />
+            <TextField fx:id="textType" layoutX="122.0" layoutY="220.0" prefHeight="31.0" prefWidth="140.0" promptText="Type" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="userPane" layoutY="68.0" prefHeight="364.0" prefWidth="960.0" visible="false">
+         <children>
+            <TableView fx:id="tableUser" layoutX="18.0" layoutY="14.0" prefHeight="300.0" prefWidth="915.0">
+              <columns>
+                  <TableColumn fx:id="colUser" prefWidth="162.0" text="Username" />
+                <TableColumn fx:id="colName" prefWidth="199.0" text="Name" />
+                <TableColumn fx:id="colSur" minWidth="0.0" prefWidth="215.0" text="Surname" />
+                  <TableColumn fx:id="colEmail" prefWidth="213.0" text="Email" />
+                  <TableColumn fx:id="colPri" prefWidth="128.0" text="Priority" />
+              </columns>
+            </TableView>
+            <TextField fx:id="textUserSet" layoutX="62.0" layoutY="325.0" prefHeight="31.0" prefWidth="185.0" />
+            <MenuButton fx:id="menuPri" layoutX="264.0" layoutY="325.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="-">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetPriAction" text="admin" />
+                <MenuItem mnemonicParsing="false" onAction="#handleBtnSetPriAction" text="user" />
+              </items>
+            </MenuButton>
+            <Button fx:id="delBtn" layoutX="756.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleBtnDeleteAction" prefHeight="31.0" prefWidth="88.0" text="Delete" />
+            <Button fx:id="setBtn" layoutX="382.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleBtnSetAction" prefHeight="31.0" prefWidth="65.0" text="Set" />
+            <TextField fx:id="textUserDelete" layoutX="594.0" layoutY="325.0" prefHeight="31.0" prefWidth="149.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelName" alignment="CENTER" layoutX="85.0" layoutY="14.0" prefHeight="31.0" prefWidth="176.0" text="user">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnLogout" prefHeight="31.0" prefWidth="71.0" text="Logout" />
+      <Button layoutX="17.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleBtnBackAction" prefWidth="100.0" text="Back" />
+      <Button fx:id="userBtn" layoutX="636.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnUserAction" prefWidth="100.0" text="User" />
+      <Button fx:id="movieBtn" layoutX="736.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnMovieAction" prefWidth="100.0" text="Movie" />
+      <Button fx:id="teamBtn" layoutX="836.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnTeamAction" prefWidth="100.0" text="Theme" />
+      <Label fx:id="labelSet" alignment="CENTER" layoutX="425.0" layoutY="19.0" prefWidth="100.0" text="Setting">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

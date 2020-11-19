@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="wallpaper" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.MovieProfileController">
+   <children>
+      <MediaView fx:id="mediaMovie" fitHeight="300.0" fitWidth="540.0" layoutX="42.0" layoutY="29.0" />
+      <ImageView fx:id="imageMovie" fitHeight="360.0" fitWidth="240.0" layoutX="651.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="651.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleBtnSelectAction" prefHeight="31.0" prefWidth="240.0" text="Select" />
+      <Button layoutX="14.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleBtnBackAction" prefHeight="25.0" prefWidth="100.0" text="Back" />
+      <Label fx:id="textData" layoutX="42.0" layoutY="340.0" prefHeight="95.0" prefWidth="540.0" />
+   </children>
+</AnchorPane>

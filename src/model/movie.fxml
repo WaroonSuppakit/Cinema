@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="wallpaper" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.MovieController">
+   <children>
+      <Button fx:id="movieBtn1" layoutX="81.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleMovie1Action" prefHeight="360.0" prefWidth="240.0" />
+      <Button fx:id="movieBtn2" layoutX="356.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleMovie2Action" prefHeight="360.0" prefWidth="240.0" />
+      <Button fx:id="movieBtn3" layoutX="629.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleMovie3Action" prefHeight="360.0" prefWidth="240.0" />
+      <Button layoutX="14.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleBtnBackAction" prefWidth="100.0" text="back" />
+   </children>
+</AnchorPane>

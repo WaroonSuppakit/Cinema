@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="wallpaper" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.TicketController">
+   <children>
+      <Pane fx:id="paneTic" layoutX="61.0" layoutY="70.0" prefHeight="360.0" prefWidth="240.0">
+         <children>
+            <ImageView fx:id="imageMovie" fitHeight="260.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="textData" layoutY="260.0" prefHeight="99.0" prefWidth="240.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneBill" layoutX="327.0" layoutY="70.0" prefHeight="360.0" prefWidth="240.0">
+         <children>
+            <Label layoutX="74.0" layoutY="14.0" text="Com Sci Cinema" />
+            <Label fx:id="textList" alignment="CENTER" layoutX="17.0" layoutY="41.0" prefHeight="3.0" prefWidth="208.0" text="* * * * * * * * * * * * * * * * * * * * " />
+            <Label fx:id="textList1" alignment="CENTER" layoutX="16.0" layoutY="286.0" prefHeight="3.0" prefWidth="208.0" text="* * * * * * * * * * * * * * * * * * * * " />
+            <Label layoutX="90.0" layoutY="307.0" text="Thank You" />
+            <Label fx:id="textBill" alignment="TOP_LEFT" layoutX="15.0" layoutY="62.0" prefHeight="207.0" prefWidth="208.0" />
+            <Label fx:id="textTotal" layoutX="14.0" layoutY="269.0" text="Total :" />
+            <Label fx:id="textName" alignment="CENTER" layoutX="22.0" layoutY="330.0" prefHeight="21.0" prefWidth="192.0" text="name" />
+         </children></Pane>
+      <Button layoutX="780.0" layoutY="383.0" mnemonicParsing="false" onAction="#saveAsBill" prefHeight="30.0" prefWidth="100.0" text="Save Bill" />
+      <Button layoutX="639.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleBtnAction" prefHeight="30.0" prefWidth="100.0" text="Home" />
+      <Label alignment="CENTER" layoutX="706.0" layoutY="186.0" text="Your Ticket Save As " />
+      <Label fx:id="textFile" alignment="CENTER" layoutX="615.0" layoutY="229.0" prefHeight="21.0" prefWidth="289.0" text="file" />
+      <Separator layoutX="564.0" layoutY="70.0" orientation="VERTICAL" prefHeight="360.0" prefWidth="7.0" />
+      <Separator layoutX="324.0" layoutY="70.0" orientation="VERTICAL" prefHeight="360.0" prefWidth="7.0" />
+   </children>
+</AnchorPane>

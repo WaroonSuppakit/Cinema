@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="wallpaper" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.MovieRoundController">
+   <children>
+      <ImageView fx:id="imageMovie" fitHeight="360.0" fitWidth="240.0" layoutX="44.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageSystemNor" fitHeight="80.0" fitWidth="180.0" layoutX="367.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../TestFile/test.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnNor1" disable="true" layoutX="586.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleLoadNorTheaterAction" text="10:30" />
+      <Button fx:id="btnNor2" disable="true" layoutX="692.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleLoadNorTheaterAction" text="14:40" />
+      <Button fx:id="btnNor3" disable="true" layoutX="798.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleLoadNorTheaterAction" text="19:30" />
+      <Button fx:id="btn3D3" disable="true" layoutX="798.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleLoad3DTheaterAction" text="19:30" />
+      <Button fx:id="btn3D2" disable="true" layoutX="692.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleLoad3DTheaterAction" text="14:40" />
+      <Button fx:id="btn3D1" disable="true" layoutX="586.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleLoad3DTheaterAction" text="10:30" />
+      <ImageView fx:id="imageSystem3D" fitHeight="80.0" fitWidth="180.0" layoutX="367.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../TestFile/test.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn4D3" disable="true" layoutX="798.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleLoad4DMixTheaterAction" text="19:30" />
+      <Button fx:id="btn4D2" disable="true" layoutX="692.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleLoad4DMixTheaterAction" text="14:40" />
+      <Button fx:id="btn4D1" disable="true" layoutX="586.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleLoad4DTheaterAction" text="10:30" />
+      <ImageView fx:id="imageSystem4D" fitHeight="80.0" fitWidth="180.0" layoutX="367.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../TestFile/test.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVIP3" disable="true" layoutX="798.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleLoadVIPTheaterAction" text="19:30" />
+      <Button fx:id="btnVIP2" disable="true" layoutX="692.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleLoadVIPTheaterAction" text="14:40" />
+      <Button fx:id="btnVIP1" disable="true" layoutX="586.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleLoadVIPTheaterAction" text="10:30" />
+      <ImageView fx:id="imageSystemVIP" fitHeight="80.0" fitWidth="180.0" layoutX="367.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../TestFile/test.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="18.0" layoutY="461.0" mnemonicParsing="false" onAction="#handleBackAction" prefWidth="100.0" text="Back" />
+   </children>
+</AnchorPane>

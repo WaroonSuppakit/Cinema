@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="wallpaper" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.HomeController">
+   <children>
+      <Button fx:id="btnProfile" layoutX="117.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleBtnProfileAction" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="btnMovie" layoutX="377.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleBtnCinemaAction" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="btnSetting" layoutX="633.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleBtnSettingAction" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnLogout" prefHeight="31.0" prefWidth="71.0" text="Logout" />
+      <Label fx:id="labelName" alignment="CENTER" layoutX="85.0" layoutY="14.0" prefHeight="31.0" prefWidth="176.0" text="user" />
+   </children>
+</AnchorPane>

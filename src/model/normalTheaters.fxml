@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="wallpaper" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.NormalTheatersController">
+   <children>
+      <Separator layoutX="620.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="0.0" />
+      <Button layoutX="726.0" layoutY="434.0" mnemonicParsing="false" onAction="#handleConAction" prefHeight="35.0" prefWidth="120.0" text="Confirm" />
+      <Button layoutX="254.0" layoutY="434.0" mnemonicParsing="false" onAction="#handleBtnAction" prefHeight="35.0" prefWidth="120.0" text="Home" />
+      <ImageView fx:id="imageScreen" fitHeight="75.0" fitWidth="555.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/csr.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageMovie" fitHeight="360.0" fitWidth="240.0" layoutX="666.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="textPrice" alignment="CENTER" layoutX="712.0" layoutY="380.0" prefHeight="35.0" prefWidth="148.0" text="Total : 0 Bath">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageChair" fitHeight="50.0" fitWidth="50.0" layoutX="241.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="321.0" layoutY="388.0" text="100 Bath">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="textTitle" alignment="CENTER" layoutX="122.0" layoutY="103.0" prefHeight="21.0" prefWidth="383.0" text="Movie : Cinema : Time :" />
+      <Button fx:id="B2" layoutX="164.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="B1" layoutX="114.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="B3" layoutX="214.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="B8" layoutX="464.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="B4" layoutX="264.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="B6" layoutX="364.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="B5" layoutX="314.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="B7" layoutX="414.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="C8" layoutX="464.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="C7" layoutX="414.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="D7" layoutX="414.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="C2" layoutX="164.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="C4" layoutX="264.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="C5" layoutX="314.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="C6" layoutX="364.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="D5" layoutX="314.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="D6" layoutX="364.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="C1" layoutX="114.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="C3" layoutX="214.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="D4" layoutX="264.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="D8" layoutX="464.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="D3" layoutX="214.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="D1" layoutX="114.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="D2" layoutX="164.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="A7" layoutX="414.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="A5" layoutX="314.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="A6" layoutX="364.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="A4" layoutX="264.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="A8" layoutX="464.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="A3" layoutX="214.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="A1" layoutX="114.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="A2" layoutX="164.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleChooseNorAction" prefHeight="50.0" prefWidth="50.0" />
+      <Label layoutX="484.0" layoutY="339.0" text="8" />
+      <Label layoutX="434.0" layoutY="339.0" text="7" />
+      <Label layoutX="384.0" layoutY="339.0" text="6" />
+      <Label layoutX="334.0" layoutY="339.0" text="5" />
+      <Label layoutX="284.0" layoutY="339.0" text="4" />
+      <Label layoutX="234.0" layoutY="339.0" text="3" />
+      <Label layoutX="184.0" layoutY="339.0" text="2" />
+      <Label layoutX="134.0" layoutY="339.0" text="1" />
+      <Label layoutX="84.0" layoutY="150.0" text="D" />
+      <Label layoutX="84.0" layoutY="200.0" text="C" />
+      <Label layoutX="85.0" layoutY="250.0" text="B" />
+      <Label layoutX="85.0" layoutY="300.0" text="A" />
+   </children>
+</AnchorPane>
